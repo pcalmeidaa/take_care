@@ -68,91 +68,89 @@ class _TelaRegistroState extends State<TelaRegistro> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
         title: Text('Monte seu Perfil', style: TextStyle(color: Colors.black),),
-
-        actions: [IconButton(icon: Icon(Icons.save), onPressed: null)],
         centerTitle: true,
-      ),
-      body: Center(
-        child: Padding(
-          padding: EdgeInsets.all(10),
-          child: Form(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                exit(),
-                  CircleAvatar(
-                  child: (Image.network("https://cdn-icons-png.flaticon.com/512/3554/3554891.png")),
-                  radius: 60,
-                  backgroundColor: Colors.white,
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                fieldName(),
-                SizedBox(
-                  height: 10,
-                ),
-                fieldDtNascimento(),
-                SizedBox(
-                  height: 10,
-                ),
-                fieldSexo(),
-                SizedBox(
-                  height: 10,
-                ),
-                fieldPhone(),
-                SizedBox(
-                  height: 10,
-                ),
-                fieldTipoCuidador(),
-                SizedBox(
-                  height: 10,
-                ),
-                SizedBox(
-                  width: 153,
-                  height: 66,
-                  child: ElevatedButton(
-                      onPressed: () {},
-                      child: Text(
-                        'Pronto',
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      style: ElevatedButton.styleFrom(
-                        primary: Color(0xff16ABFF),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                      )),
-                )
-              ],
-            ),
+        leading: IconButton(
+          icon: const Icon(
+            Icons.close,
+            color: Colors.black,
+            size: 30,
+          
           ),
-        ),
-      ),
-    );
-  }
-  exit() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Container(
-          margin: EdgeInsets.fromLTRB(0, 20, 0, 0),
-          child: IconButton(
-            onPressed: () {
+          
+          onPressed: () {
               Navigator.of(context).pop();
-            },
-            icon: FaIcon(
-              FontAwesomeIcons.times,
+            }),
+        
+
+        //actions: [IconButton(icon: Icon(Icons.save), onPressed: null)],
+        
+      ),
+      body: SingleChildScrollView(
+        child: Expanded(
+          child: Center(
+            child: Padding(
+              padding: EdgeInsets.all(10),
+              child: Form(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    
+                      CircleAvatar(
+                      child: (Image.network("https://cdn-icons-png.flaticon.com/512/3554/3554891.png")),
+                      radius: 60,
+                      backgroundColor: Colors.white,
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    fieldName(),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    fieldDtNascimento(),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    fieldSexo(),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    fieldPhone(),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    fieldTipoCuidador(),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    SizedBox(
+                      width: 153,
+                      height: 66,
+                      child: ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            'Pronto',
+                            style: TextStyle(fontSize: 20),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            primary: Color(0xff16ABFF),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          )),
+                    )
+                  ],
+                ),
+              ),
             ),
           ),
         ),
-      ],
+      ),
     );
   }
 }
-
