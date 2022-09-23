@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'view/tela_metodo_login.dart';
 import 'view/tela_login.dart';
+import 'view/tela_registro.dart';
 import 'view/telas_dev.dart';
 import 'view/tela_sobre.dart';
 
@@ -18,7 +19,7 @@ void main() {
       routes: {
         'loginMethod': (context) => TelaMetodoLogin(),
         'login': (context) => TelaLogin(),
-        // 'signup': (context) => TelaRegistro(),
+        'signup': (context) => TelaRegistro(),
         'dev': (context) => TelaDev(),
         'about': (context) => TelaSobre(),
       },
