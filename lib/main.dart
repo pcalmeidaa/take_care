@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'view/tela_metodo_login.dart';
 import 'view/tela_login.dart';
 import 'view/telas_dev.dart';
+import 'view/tela_sobre.dart';
 
 void main() {
   runApp(
@@ -19,6 +20,7 @@ void main() {
         'login': (context) => TelaLogin(),
         // 'signup': (context) => TelaRegistro(),
         'dev': (context) => TelaDev(),
+        'about': (context) => TelaSobre(),
       },
     ),
   );
