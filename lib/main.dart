@@ -19,11 +19,12 @@ void main() {
       //
       routes: {
         'welcome': (context) => TelaBemvindo(),
+        'about': (context) => TelaSobre(),
         'loginMethod': (context) => TelaMetodoLogin(),
         'login': (context) => TelaLogin(),
         'signUp': (context) => TelaRegistro(),
         'dev': (context) => TelaDev(),
-        'about': (context) => TelaSobre(),
+        
       },
     ),
   );
