@@ -83,7 +83,7 @@ class _TelaMetodoLoginState extends State<TelaMetodoLogin> {
           if (tipo == 'entrar') {
             Navigator.of(context).pushNamed('login');
           } else if (tipo == 'registrar') {
-            Navigator.of(context).pushNamed('signup');
+            Navigator.of(context).pushNamed('signUp');
           }
         },
         child: Text(

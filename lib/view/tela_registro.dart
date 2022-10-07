@@ -100,7 +100,7 @@ class _TelaRegistroState extends State<TelaRegistro> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     
-                      CircleAvatar(
+                    CircleAvatar(
                       child: (Image.network("https://cdn-icons-png.flaticon.com/512/3554/3554891.png")),
                       radius: 60,
                       backgroundColor: Colors.white,

@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:take_care/view/tela_bemvindo.dart';
 import 'view/tela_metodo_login.dart';
 import 'view/tela_login.dart';
 import 'view/tela_registro.dart';
@@ -12,14 +13,15 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Take Care',
-      initialRoute: 'loginMethod',
+      initialRoute: 'welcome',
       //
       // ROTAS DE NAVEGAÇÃO
       //
       routes: {
+        'welcome': (context) => TelaBemvindo(),
         'loginMethod': (context) => TelaMetodoLogin(),
         'login': (context) => TelaLogin(),
-        'signup': (context) => TelaRegistro(),
+        'signUp': (context) => TelaRegistro(),
         'dev': (context) => TelaDev(),
         'about': (context) => TelaSobre(),
       },

@@ -5,11 +5,12 @@ class TelaSobre extends StatefulWidget {
 
   @override
   State<TelaSobre> createState() => _TelaSobreState();
+
 }
 
 class _TelaSobreState extends State<TelaSobre> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }

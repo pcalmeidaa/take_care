@@ -27,7 +27,7 @@ class _TelaLoginState extends State<TelaLogin> {
       // appBar: AppBar(
       //   // title: Text('Take Care'),
       //   centerTitle: true,
-      // 
+      //
       // CORPO
       body: SingleChildScrollView(
         child: Padding(
