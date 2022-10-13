@@ -56,7 +56,7 @@ class _TelaSobreState extends State<TelaSobre> {
                   Container(
                     child: const Text(
                       'Paulo Almeida\n'
-                      'Sócio-Fundadador',
+                      'Sócio-Fundador',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         backgroundColor: Colors.white,
