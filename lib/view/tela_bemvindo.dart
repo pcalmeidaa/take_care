@@ -27,7 +27,7 @@ class _TelaBemvindoState extends State<TelaBemvindo> {
                   ),
                   Container(
                     margin: EdgeInsets.all(10),
-                    child: Image.asset('lib/images/logotelabemvindo.png'),
+                    child: Image.asset('assets/images/cuidadorIdoso.png'),
                   ),
                   SizedBox(
                     height: 50,
@@ -65,7 +65,7 @@ class _TelaBemvindoState extends State<TelaBemvindo> {
                     height: 66,
                     child: ElevatedButton(
                         onPressed: () {
-                          Navigator.of(context).pushNamed('loginMethod');
+                          Navigator.of(context).pushNamed('about');
                         },
                         // ignore: sort_child_properties_last
                         child: const Text(

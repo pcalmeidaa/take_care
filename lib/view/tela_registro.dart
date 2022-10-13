@@ -101,7 +101,7 @@ class _TelaRegistroState extends State<TelaRegistro> {
                   children: [
                     
                     CircleAvatar(
-                      child: (Image.network("https://cdn-icons-png.flaticon.com/512/3554/3554891.png")),
+                      child: Image.asset("assets/images/registro.png"),
                       radius: 60,
                       backgroundColor: Colors.white,
                     ),
