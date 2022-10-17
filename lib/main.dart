@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:take_care/view/tela_bemvindo.dart';
+import 'package:take_care/view/tela_principal.dart';
 import 'view/tela_metodo_login.dart';
 import 'view/tela_login.dart';
 import 'view/tela_registro.dart';
@@ -24,6 +25,7 @@ void main() {
         'login': (context) => TelaLogin(),
         'signUp': (context) => TelaRegistro(),
         'dev': (context) => TelaDev(),
+        'main screen': (context) => TelaPrincipal(),
         
       },
     ),
