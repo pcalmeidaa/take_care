@@ -21,13 +21,22 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                    CircleAvatar(
-                      child: Image.asset("assets/images/registro.png"),
-                      radius: 60,
-                      backgroundColor: Colors.white,
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      right: 8,
+                      top: 16,
                     ),
-
-                    SizedBox(
+                    child: Container(
+                      alignment: Alignment.topRight,
+                      child: CircleAvatar(
+                        radius: 30,
+                        backgroundColor: Colors.white,
+                        child: Image.asset("assets/images/registro.png"),
+                      ),
+                    ),
+                  ),
+                  Container(),
+                  SizedBox(
                     width: 153,
                     height: 66,
                     child: ElevatedButton(

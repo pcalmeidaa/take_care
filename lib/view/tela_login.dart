@@ -168,7 +168,9 @@ class _TelaLoginState extends State<TelaLogin> {
         minimumSize: Size(999, 60),
         backgroundColor: Color.fromARGB(255, 22, 171, 255),
       ),
-      onPressed: () {},
+      onPressed: () {
+        Navigator.of(context).pushNamed('mainScreen');
+      },
       child: Text(
         rotulo,
         style: GoogleFonts.montserrat(
@@ -184,6 +186,7 @@ class _TelaLoginState extends State<TelaLogin> {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        
         Container(
           margin: EdgeInsets.fromLTRB(0, 20, 0, 0),
           child: IconButton(
