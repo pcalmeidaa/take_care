@@ -26,7 +26,6 @@ void main() {
         'signUp': (context) => TelaRegistro(),
         'dev': (context) => TelaDev(),
         'mainScreen': (context) => TelaPrincipal(),
-        
       },
     ),
   );
