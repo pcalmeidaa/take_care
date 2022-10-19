@@ -35,26 +35,142 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                       ),
                     ),
                   ),
-                  Container(),
-                  SizedBox(
-                    width: 153,
-                    height: 66,
-                    child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.of(context).pushNamed('about');
-                        },
-                        // ignore: sort_child_properties_last
-                        child: const Text(
-                          'Próximo',
-                          style: TextStyle(fontSize: 20),
-                        ),
-                        style: ElevatedButton.styleFrom(
-                          primary: Color(0xff16ABFF),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
+                  Container(
+                    margin: EdgeInsets.all(10),
+                    child: Image.asset('assets/images/meuPaciente.png'),
+                  ),
+                  Center(
+                    child: Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: Row(children: [
+                        Ink(
+                          decoration: BoxDecoration(
+                            color: Colors.grey.shade200,
+                            border: Border.all(color: Colors.black),
                           ),
-                        )),
-                  )
+                          child: Column(
+                            children: [
+                              Container(
+                                margin: EdgeInsets.all(10),
+                                child: Image.asset(
+                                  'assets/images/dieta.png',
+                                  width: 100,
+                                  height: 100,
+                                ),
+                              ),
+                              SizedBox(
+                                child: const Text(
+                                  'DIETA',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    //backgroundColor: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w600,
+                                    fontFamily: 'Montserrat',
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Ink(
+                          decoration: BoxDecoration(
+                            color: Colors.grey.shade200,
+                            border: Border.all(color: Colors.black),
+                          ),
+                          child: Column(
+                            children: [
+                              Container(
+                                margin: EdgeInsets.all(10),
+                                child:
+                                    Image.asset('assets/images/medicacoes.png'),
+                                width: 100,
+                                height: 100,
+                              ),
+                              SizedBox(
+                                child: const Text(
+                                  'MEDICAÇÕES',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    //backgroundColor: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w600,
+                                    fontFamily: 'Montserrat',
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ], mainAxisAlignment: MainAxisAlignment.spaceBetween),
+                    ),
+                  ),
+                  Center(
+                    child: Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: Row(children: [
+                        Ink(
+                          decoration: BoxDecoration(
+                            color: Colors.grey.shade200,
+                            border: Border.all(color: Colors.black),
+                          ),
+                          child: Column(
+                            children: [
+                              Container(
+                                margin: EdgeInsets.all(10),
+                                child: Image.asset(
+                                  'assets/images/agenda.png',
+                                  width: 100,
+                                  height: 100,
+                                ),
+                              ),
+                              SizedBox(
+                                child: const Text(
+                                  'AGENDA',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    backgroundColor: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w600,
+                                    fontFamily: 'Montserrat',
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Ink(
+                          decoration: BoxDecoration(
+                            color: Colors.grey.shade200,
+                            border: Border.all(color: Colors.black),
+                          ),
+                          child: Column(
+                            children: [
+                              Container(
+                                margin: EdgeInsets.all(10),
+                                child: Image.asset(
+                                    'assets/images/batimentoscardiacos.png'),
+                                width: 100,
+                                height: 100,
+                              ),
+                              SizedBox(
+                                child: const Text(
+                                  'CARDIO',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    //backgroundColor: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w600,
+                                    fontFamily: 'Montserrat',
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ], mainAxisAlignment: MainAxisAlignment.spaceBetween),
+                    ),
+                  ),
                 ],
               ),
             ),
