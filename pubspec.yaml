@@ -34,6 +34,7 @@ dependencies:
   font_awesome_flutter: ^10.2.1
   flat_icons_flutter: ^1.0.2
   mask_text_input_formatter: ^2.4.0
+  gap: ^2.0.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -72,8 +73,6 @@ flutter:
     - assets/images/richard.png
     - assets/images/cuidadorIdoso.png
     - assets/images/registro.png
-    - assets/images/velha.png
-    - assets/images/medicacoes.png
     
      
     

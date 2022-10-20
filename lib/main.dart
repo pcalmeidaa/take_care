@@ -29,8 +29,6 @@ void main() {
         'registerPatient': (context) => TelaRegistroPaciente(),
         'dev': (context) => TelaDev(),
         'mainScreen': (context) => TelaPrincipal(),
-        'scheduleMedication': (constext) => TelaAgendaMedicacoes(),
-        'listMedication': (constext) => TelaListaMedicacoes()
       },
     ),
   );

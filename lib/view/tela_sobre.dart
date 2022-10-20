@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
-
 class TelaSobre extends StatefulWidget {
   const TelaSobre({super.key});
 
   @override
   State<TelaSobre> createState() => _TelaSobreState();
-
 }
 
 class _TelaSobreState extends State<TelaSobre> {
@@ -39,7 +37,6 @@ class _TelaSobreState extends State<TelaSobre> {
                         fontSize: 20,
                         fontWeight: FontWeight.w300,
                         fontFamily: 'Montserrat',
-                        
                       ),
                     ),
                   ),
@@ -49,10 +46,8 @@ class _TelaSobreState extends State<TelaSobre> {
                       'assets/images/paulo.png',
                       width: 150,
                       height: 150,
-
                     ),
                   ),
-
                   Container(
                     child: const Text(
                       'Paulo Almeida\n'
@@ -66,18 +61,14 @@ class _TelaSobreState extends State<TelaSobre> {
                       ),
                     ),
                   ),
-
-
                   Container(
                     margin: EdgeInsets.fromLTRB(20, 200, 20, 20),
                     child: Image.asset(
                       'assets/images/richard.png',
                       width: 150,
                       height: 150,
-                      
                     ),
                   ),
-
                   Container(
                     child: const Text(
                       'Richard Barros\n'

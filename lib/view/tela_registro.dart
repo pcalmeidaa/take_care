@@ -21,8 +21,13 @@ class _TelaRegistroState extends State<TelaRegistro> {
 
   Widget fieldName() {
     return TextFormField(
-      decoration:
-          InputDecoration(border: OutlineInputBorder(), labelText: 'Nome:'),
+      decoration: InputDecoration(
+        border: OutlineInputBorder(),
+        labelText: 'Nome:',
+        fillColor: Colors.grey.shade300,
+        filled: true,
+        prefixIcon: Icon(Icons.person),
+      ),
     );
   }
 
@@ -99,6 +104,19 @@ class _TelaRegistroState extends State<TelaRegistro> {
                       radius: 60,
                       backgroundColor: Colors.white,
                     ),
+                    Container(
+                      child: const Text(
+                        'Alterar',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          backgroundColor: Colors.white,
+                          fontSize: 15,
+                          fontWeight: FontWeight.w500,
+                          fontFamily: 'Montserrat',
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ),
                     SizedBox(
                       height: 10,
                     ),
@@ -126,9 +144,7 @@ class _TelaRegistroState extends State<TelaRegistro> {
                       width: 153,
                       height: 66,
                       child: ElevatedButton(
-                          onPressed: () {
-                            Navigator.pushNamed(context, 'registerPatient');
-                          },
+                          onPressed: () {},
                           child: Text(
                             'Pronto',
                             style: TextStyle(fontSize: 20),
