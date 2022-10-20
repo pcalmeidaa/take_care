@@ -21,8 +21,13 @@ class _TelaRegistroState extends State<TelaRegistro> {
 
   Widget fieldName() {
     return TextFormField(
-      decoration:
-          InputDecoration(border: OutlineInputBorder(), labelText: 'Nome:'),
+      decoration: InputDecoration(
+        border: OutlineInputBorder(),
+        labelText: 'Nome:',
+        fillColor: Colors.grey.shade300,
+        filled: true,
+        prefixIcon: Icon(Icons.person),
+      ),
     );
   }
 
