@@ -124,7 +124,9 @@ class _TelaRegistroPacienteState extends State<TelaRegistroPaciente> {
                       width: 153,
                       height: 66,
                       child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'mainScreen');
+                          },
                           child: Text(
                             'Pronto',
                             style: TextStyle(fontSize: 20),

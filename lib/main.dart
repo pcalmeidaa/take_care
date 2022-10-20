@@ -1,4 +1,6 @@
 // ignore_for_file: prefer_const_constructors
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:take_care/view/tela_bemvindo.dart';
 import 'package:take_care/view/tela_principal.dart';
@@ -29,6 +31,8 @@ void main() {
         'registerPatient': (context) => TelaRegistroPaciente(),
         'dev': (context) => TelaDev(),
         'mainScreen': (context) => TelaPrincipal(),
+        'listMedication': (context) => TelaListaMedicacoes(),
+        'scheduleMedication': (context) => TelaAgendaMedicacoes(),
       },
     ),
   );

@@ -216,7 +216,10 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                               borderRadius: BorderRadius.circular(8),
                               child: InkWell(
                                 splashColor: Colors.grey,
-                                onTap: () {},
+                                onTap: () {
+                                  Navigator.pushNamed(
+                                      context, 'listMedication');
+                                },
                                 child: Ink(
                                   height: 150,
                                   width: 150,
