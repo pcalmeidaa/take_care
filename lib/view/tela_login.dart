@@ -62,7 +62,7 @@ class _TelaLoginState extends State<TelaLogin> {
                   'Senha',
                   txtSenha,
                 ),
-                botao('Entrar'),
+                botao('Entrar', 'mainScreen'),
                 //
                 // REGISTRAR-SE
                 //
@@ -162,14 +162,14 @@ class _TelaLoginState extends State<TelaLogin> {
     );
   }
 
-  botao(rotulo) {
+  botao(rotulo, push) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         minimumSize: Size(999, 60),
         backgroundColor: Color.fromARGB(255, 22, 171, 255),
       ),
       onPressed: () {
-        Navigator.of(context).pushNamed('mainScreen');
+        Navigator.of(context).pushNamed(push);
       },
       child: Text(
         rotulo,
@@ -186,7 +186,6 @@ class _TelaLoginState extends State<TelaLogin> {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        
         Container(
           margin: EdgeInsets.fromLTRB(0, 20, 0, 0),
           child: IconButton(

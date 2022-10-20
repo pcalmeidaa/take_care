@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:take_care/view/tela_login.dart';
 
-
-
 class TelaRegistro extends StatefulWidget {
   const TelaRegistro({super.key});
 
@@ -18,7 +16,6 @@ class _TelaRegistroState extends State<TelaRegistro> {
 
   var phone = MaskTextInputFormatter(mask: '(##) # ####-####');
   var data = MaskTextInputFormatter(mask: '##/##/####');
-
 
   //METODOS
 
@@ -68,27 +65,25 @@ class _TelaRegistroState extends State<TelaRegistro> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
-        title: Text('Monte seu Perfil', style: TextStyle(color: Colors.black),),
+        title: Text(
+          'Monte seu Perfil',
+          style: TextStyle(color: Colors.black),
+        ),
         centerTitle: true,
         leading: IconButton(
-          icon: const Icon(
-            Icons.close,
-            color: Colors.black,
-            size: 30,
-          
-          ),
-          
-          onPressed: () {
+            icon: const Icon(
+              Icons.close,
+              color: Colors.black,
+              size: 30,
+            ),
+            onPressed: () {
               Navigator.of(context).pop();
             }),
-        
 
         //actions: [IconButton(icon: Icon(Icons.save), onPressed: null)],
-        
       ),
       body: SingleChildScrollView(
         child: Expanded(
@@ -99,7 +94,6 @@ class _TelaRegistroState extends State<TelaRegistro> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    
                     CircleAvatar(
                       child: Image.asset("assets/images/registro.png"),
                       radius: 60,
@@ -132,7 +126,9 @@ class _TelaRegistroState extends State<TelaRegistro> {
                       width: 153,
                       height: 66,
                       child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'registerPatient');
+                          },
                           child: Text(
                             'Pronto',
                             style: TextStyle(fontSize: 20),

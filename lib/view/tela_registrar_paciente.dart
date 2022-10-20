@@ -1,10 +1,5 @@
-// ignore_for_file: sort_child_properties_last
-
-import 'dart:io';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
-import 'package:take_care/view/tela_login.dart';
 
 class TelaRegistroPaciente extends StatefulWidget {
   const TelaRegistroPaciente({super.key});
@@ -97,7 +92,7 @@ class _TelaRegistroPacienteState extends State<TelaRegistroPaciente> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     CircleAvatar(
-                      child: Image.asset("assets/images/registro_idoso.png"),
+                      child: Image.asset("assets/images/velha.png"),
                       radius: 60,
                       backgroundColor: Colors.white,
                     ),
