@@ -13,6 +13,7 @@ class TelaPrincipal extends StatefulWidget {
 class _TelaPrincipalState extends State<TelaPrincipal> {
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
         child: Expanded(
@@ -61,7 +62,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                               child: Row(
                                 children: [
                                   CircleAvatar(
-                                    radius: 80,
+                                    radius: size.width * 0.17,
                                     backgroundColor: Colors.white,
                                     child: Image.asset(
                                         "assets/images/paciente.png"),
@@ -167,7 +168,9 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                               borderRadius: BorderRadius.circular(8),
                               child: InkWell(
                                 splashColor: Colors.grey,
-                                onTap: () {},
+                                onTap: () {
+                                  Navigator.of(context).pushNamed('listdieta');
+                                },
                                 child: Ink(
                                   height: 150,
                                   width: 150,

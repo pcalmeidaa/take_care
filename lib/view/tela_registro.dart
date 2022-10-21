@@ -38,14 +38,22 @@ class _TelaRegistroState extends State<TelaRegistro> {
       decoration: InputDecoration(
           border: OutlineInputBorder(),
           labelText: 'Data Nascimento:',
+          fillColor: Colors.grey.shade300,
+          filled: true,
+          prefixIcon: Icon(Icons.date_range),
           hintText: 'DD/MM/YYYY'),
     );
   }
 
   Widget fieldSexo() {
     return TextFormField(
-      decoration:
-          InputDecoration(border: OutlineInputBorder(), labelText: 'Sexo:'),
+      decoration: InputDecoration(
+        border: OutlineInputBorder(),
+        labelText: 'Sexo:',
+        fillColor: Colors.grey.shade300,
+        filled: true,
+        prefixIcon: Icon(FontAwesomeIcons.venusMars),
+      ),
     );
   }
 
@@ -56,6 +64,9 @@ class _TelaRegistroState extends State<TelaRegistro> {
       decoration: InputDecoration(
           border: OutlineInputBorder(),
           labelText: 'Telefone:',
+          fillColor: Colors.grey.shade300,
+          filled: true,
+          prefixIcon: Icon(Icons.phone_android),
           hintText: '(99) 9 9999-9999'),
     );
   }
@@ -63,7 +74,12 @@ class _TelaRegistroState extends State<TelaRegistro> {
   Widget fieldTipoCuidador() {
     return TextFormField(
       decoration: InputDecoration(
-          border: OutlineInputBorder(), labelText: 'Tipo de Cuidador:'),
+        border: OutlineInputBorder(),
+        labelText: 'Tipo de Cuidador:',
+        fillColor: Colors.grey.shade300,
+        filled: true,
+        prefixIcon: Icon(FontAwesomeIcons.userNurse),
+      ),
     );
   }
 
@@ -144,7 +160,9 @@ class _TelaRegistroState extends State<TelaRegistro> {
                       width: 153,
                       height: 66,
                       child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).pushNamed('login');
+                          },
                           child: Text(
                             'Pronto',
                             style: TextStyle(fontSize: 20),

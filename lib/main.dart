@@ -2,7 +2,9 @@
 import 'dart:js';
 
 import 'package:flutter/material.dart';
+import 'package:take_care/view/tela_agendar_dietas.dart';
 import 'package:take_care/view/tela_bemvindo.dart';
+import 'package:take_care/view/tela_listadietas.dart';
 import 'package:take_care/view/tela_principal.dart';
 import 'view/tela_metodo_login.dart';
 import 'view/tela_login.dart';
@@ -33,6 +35,8 @@ void main() {
         'mainScreen': (context) => TelaPrincipal(),
         'listMedication': (context) => TelaListaMedicacoes(),
         'scheduleMedication': (context) => TelaAgendaMedicacoes(),
+        'listdieta': (context) => TelaListaDietas(),
+        'scheduleDieta': (context) => TelaAgendarDietas(),
       },
     ),
   );
