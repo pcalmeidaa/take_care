@@ -302,8 +302,8 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                                     children: [
                                       Image.asset(
                                         'assets/images/agenda.png',
-                                        width: 80,
-                                        height: 80,
+                                        width: 100,
+                                        height: 100,
                                       ),
                                       const SizedBox(
                                         child: Text(
