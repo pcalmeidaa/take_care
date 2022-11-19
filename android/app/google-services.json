@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "806455577889",
+    "project_id": "takecare-e6ec8",
+    "storage_bucket": "takecare-e6ec8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806455577889:android:c1a00ded6fa144df03c260",
+        "android_client_info": {
+          "package_name": "com.example.take_care"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806455577889-ft04bpqhffdce3ncc28elp3ogjj8pbm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmR9SRpOuMsRhQiJknp_CybF73X4-9u6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806455577889-ft04bpqhffdce3ncc28elp3ogjj8pbm7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "806455577889-okn4djgvcpu49l9k5ppoa9o34bkc30qq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.takeCare"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

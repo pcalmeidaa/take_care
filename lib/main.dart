@@ -6,6 +6,7 @@ import 'package:take_care/view/tela_agendar_dietas.dart';
 import 'package:take_care/view/tela_bemvindo.dart';
 import 'package:take_care/view/tela_listadietas.dart';
 import 'package:take_care/view/tela_principal.dart';
+import 'firebase_options.dart';
 import 'view/tela_metodo_login.dart';
 import 'view/tela_login.dart';
 import 'view/tela_registro.dart';
@@ -14,8 +15,22 @@ import 'view/tela_sobre.dart';
 import 'view/tela_agendar_medicamentos.dart';
 import 'view/tela_listamedicacoes.dart';
 import 'view/tela_registrar_paciente.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+Future<void> main() async {
+  //
+  //EVITA O ERRO DE INICIALIZAÇÃO NO ANDROID
+  //
+
+  WidgetsFlutterBinding.ensureInitialized();
+
+  //
+  //INICIALIZAÇÃO FIREBASE
+  //
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
